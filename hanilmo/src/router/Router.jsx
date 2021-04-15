@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "../page/Home";
+import { About } from "../page/About";
+import { Contact } from "../page/Contact";
 
 const routes = [
   {

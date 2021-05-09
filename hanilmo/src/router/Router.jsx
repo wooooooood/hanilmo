@@ -46,8 +46,8 @@ export const Router = () => {
               <Link to="/">Home img</Link>
             </li>
             {
-              routes.map((route) => (
-                <li className="list-none">
+              routes.map((route, index) => (
+                <li key={index} className="list-none">
               <Link to={route.path}>{route.name}</Link>
             </li>
               ))

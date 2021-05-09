@@ -1,13 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-export const Home = () => {
+export const BeforeAfter = () => {
   return (
     <>
       <Helmet>
-        <title>한일모 :: 이상무 명품가발</title>
+        <title>한일모 :: 착용사진</title>
       </Helmet>
-      <h1>홈</h1>
+      <h1>전후</h1>
     </>
   );
 };

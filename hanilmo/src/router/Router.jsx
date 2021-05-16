@@ -5,6 +5,8 @@ import { About } from "../page/About";
 import { Contact } from "../page/Contact";
 import { Gallary } from "../page/Gallary";
 import { BeforeAfter } from "../page/BeforeAfter";
+import styled from "styled-components";
+import Header from "../component/Header";
 
 const home = [{
   path: "/",
@@ -41,18 +43,12 @@ export const Router = () => {
     <BrowserRouter>
       <div>
         <nav>
-          <ul>
-            <li>
-              <Link to="/">Home img</Link>
-            </li>
+            <Link to="/"><Header /></Link>
             {
               routes.map((route, index) => (
-                <li key={index} className="list-none">
-              <Link to={route.path}>{route.name}</Link>
-            </li>
+              <Link key={index} to={route.path} style={{textDecoration: 'none'}}><MenuItem>{route.name}</MenuItem></Link>
               ))
             }
-          </ul>
         </nav>
         <Switch>
           {[...home, ...routes].map(route => (
@@ -66,3 +62,13 @@ export const Router = () => {
     </>
   );
 };
+
+const MenuItem = styled.div`
+  &@media (max-width: 480px){
+    font-size: 15px;
+  }
+    font-size: 18px;
+  color: #525252;
+  display: inline-flex;
+  margin: auto 10px;
+`;

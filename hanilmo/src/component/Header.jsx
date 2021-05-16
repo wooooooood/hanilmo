@@ -8,6 +8,8 @@ const LogoImg = styled.img`
   }
   width: 100%;
   max-width: 400px;
+  margin: 10px auto;
+  display: block;
 `;
 
 function Header () {

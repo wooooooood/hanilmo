@@ -29,7 +29,8 @@
     },
     "plugins": [
         "react"
-    ],
+    ], 
     "rules": {
+        "indent": [ "error", 2 ], "semi": [2, "always"], "no-console": "error", "no-trailing-spaces": 1, "keyword-spacing": 1, "no-unused-vars": 1, "no-multiple-empty-lines": 1, "space-before-function-paren": 0, "eol-last": 1
     }
 }

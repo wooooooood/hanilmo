@@ -41,14 +41,15 @@ export const Router = () => {
   return (
     <>
     <BrowserRouter>
-      <div>
         <nav>
             <Link to="/"><Header /></Link>
+            <MenuItemContainer>
             {
               routes.map((route, index) => (
               <Link key={index} to={route.path} style={{textDecoration: 'none'}}><MenuItem>{route.name}</MenuItem></Link>
               ))
             }
+            </MenuItemContainer>
         </nav>
         <Switch>
           {[...home, ...routes].map(route => (
@@ -57,18 +58,24 @@ export const Router = () => {
             </Route>
           ))}
         </Switch>
-      </div>
     </BrowserRouter>
     </>
   );
 };
 
+const MenuItemContainer = styled.div`
+  padding: 8px 0;
+border-top: 1px solid #E4E4E4;
+border-bottom: 1px solid #E4E4E4;
+  text-align: center;
+`;
+
 const MenuItem = styled.div`
-  &@media (max-width: 480px){
+  @media (max-width: 480px){
     font-size: 15px;
   }
-    font-size: 18px;
+  font-size: 18px;
   color: #525252;
   display: inline-flex;
-  margin: auto 10px;
+  margin: auto 12px;
 `;

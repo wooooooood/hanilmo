@@ -5,7 +5,7 @@ import styled from "styled-components";
 function Header () {
   return (
     <Container>
-    <LogoImg src={title} />
+      <LogoImg src={title} />
     </Container>
   );
 }

@@ -16,17 +16,17 @@ export const Home = () => {
         <title>한일모 :: 이상무 명품가발</title>
       </Helmet>
       <div style={{backgroundColor: '#ECECEE', padding: '0px'}}>
-      <Container>
-      <MainImg src={main}/>
-      </Container>
+        <Container>
+          <MainImg src={main}/>
+        </Container>
       </div>
       <Container>
-      <SubImg src={img1}/>
-      <SubImg src={img2}/>
-      <SubImg src={img3}/>
-      <SubImg src={img4}/>
-      <SubImg src={img5}/>
-      <SubImg src={img6}/>
+        <SubImg src={img1}/>
+        <SubImg src={img2}/>
+        <SubImg src={img3}/>
+        <SubImg src={img4}/>
+        <SubImg src={img5}/>
+        <SubImg src={img6}/>
       </Container>
     </>
   );

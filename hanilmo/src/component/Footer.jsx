@@ -4,11 +4,11 @@ import styled from "styled-components";
 function Footer () {
   return (
     <>
-    <Container>
-    <FooterText>정품가발 한일모 | 대표 : 이상무 | 전화 : <a href="tel:055-292-4567" style={{textDecoration: 'none', color: '#000000'}}>055-292-4567</a></FooterText>
-<FooterText>경남 창원시 마산회원구 석전동 223-16(2층)</FooterText>
-<FooterText><strong>Copyright 명품가발 한일모 all rights reserved.</strong></FooterText>
-    </Container>
+      <Container>
+        <FooterText>정품가발 한일모 | 대표 : 이상무 | 전화 : <a href="tel:055-292-4567" style={{textDecoration: 'none', color: '#000000'}}>055-292-4567</a></FooterText>
+        <FooterText>경남 창원시 마산회원구 석전동 223-16(2층)</FooterText>
+        <FooterText><strong>Copyright 명품가발 한일모 all rights reserved.</strong></FooterText>
+      </Container>
     </>
   );
 }

@@ -12,7 +12,7 @@ const home = [{
   path: "/",
   name: "한일모",
   component: <Home />,
-},]
+},];
 
 const routes = [
   {
@@ -40,16 +40,16 @@ const routes = [
 export const Router = () => {
   return (
     <>
-    <BrowserRouter>
+      <BrowserRouter>
         <nav>
-            <Link to="/"><Header /></Link>
-            <MenuItemContainer>
+          <Link to="/"><Header /></Link>
+          <MenuItemContainer>
             {
               routes.map((route, index) => (
-              <Link key={index} to={route.path} style={{textDecoration: 'none'}}><MenuItem>{route.name}</MenuItem></Link>
+                <Link key={index} to={route.path} style={{textDecoration: 'none'}}><MenuItem>{route.name}</MenuItem></Link>
               ))
             }
-            </MenuItemContainer>
+          </MenuItemContainer>
         </nav>
         <Switch>
           {[...home, ...routes].map(route => (
@@ -58,15 +58,15 @@ export const Router = () => {
             </Route>
           ))}
         </Switch>
-    </BrowserRouter>
+      </BrowserRouter>
     </>
   );
 };
 
 const MenuItemContainer = styled.div`
   padding: 8px 0;
-border-top: 1px solid #E4E4E4;
-border-bottom: 1px solid #E4E4E4;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
   text-align: center;
 `;
 

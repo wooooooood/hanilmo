@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import styled from 'styled-components';
 import about from '../img/about.jpg';
+import '../style/tailwind.css';
 
 export const About = () => {
   return (
@@ -9,22 +9,9 @@ export const About = () => {
       <Helmet>
         <title>한일모 :: 소개</title>
       </Helmet>
-      <ImageContainer>
-        <img src={about} />
-      </ImageContainer>
+      <div>
+        <img src={about} className="w-100 mx-auto" />
+      </div>
     </>
   );
 };
-
-const ImageContainer = styled.div`
-  @media (max-width: 768px) {
-    width: 100vw;
-  }
-  text-align: center;
-
-  img.image {
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  }
-`;

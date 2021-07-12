@@ -13,13 +13,13 @@ export const BeforeAfter = () => {
       </Helmet>
       <Wrapper>
         <div className="image-container" innerText={'착용 전'}>
-          <img className="image" src={before} />
+          <img className="image" src={before} alt="착용 전"/>
         </div>
         <div className="image-container" innerText={'착용 후'}>
-          <img className="image" src={after} />
+          <img className="image" src={after} alt="착용 후"/>
         </div>
         <div className="image-container" innerText={'정면'}>
-          <img className="image" src={front} />
+          <img className="image" src={front} alt="정면"/>
         </div>
       </Wrapper>
     </>

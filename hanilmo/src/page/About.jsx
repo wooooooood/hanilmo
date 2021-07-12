@@ -1,7 +1,7 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import styled from "styled-components";
-import about from "../img/about.jpg";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import styled from 'styled-components';
+import about from '../img/about.jpg';
 
 export const About = () => {
   return (
@@ -10,21 +10,21 @@ export const About = () => {
         <title>한일모 :: 소개</title>
       </Helmet>
       <ImageContainer>
-        <Image src={about}/>
+        <img src={about} />
       </ImageContainer>
     </>
   );
 };
 
 const ImageContainer = styled.div`
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     width: 100vw;
   }
   text-align: center;
-`;
 
-const Image = styled.img`
-  @media (max-width: 768px){
-    width: 100%;
+  img.image {
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 `;

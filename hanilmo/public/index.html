@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/icon.png" />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=94d641c08bb466cb3d095eded52c8942"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="naver-site-verification"
+      content="c2439f06877bc51e9da369d7f31b9735781c0dc7"
+    />
+    <meta itemprop="image" content="%PUBLIC_URL%/icon.png" />
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/icon.png" />
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=94d641c08bb466cb3d095eded52c8942"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="naver-site-verification" content="c2439f06877bc51e9da369d7f31b9735781c0dc7">
-  <meta itemprop="image" content="%PUBLIC_URL%/icon.png">
+    <meta
+      name="description"
+      content="창원가발,정품가발,한일모,가발,마산가발,진해가발,진주가발,맞춤가발,가발대여,가발수선,부분가발,항암가발,한일모,이상무명품가발한일모,이상무명품가발"
+    />
+    <meta name="subject" content="명품가발 한일모" />
+    <meta name="author" content="명품가발 한일모" />
+    <meta
+      name="keywords"
+      content="창원가발,정품가발,한일모,마산가발,진해가발,진주가발,거제가발,양산가발,통영가발,맞춤가발,가발대여,가발수선,부분가발,항암가발,한일모,이상무한일모,이상무명품가발한일모,이상무명품가발"
+    />
+    <link rel="icon" sizes="64x64" href="%PUBLIC_URL%/icon.png" />
+    <meta name="robots" content="index,follow" />
+    <!-- Open Graph data -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="오시는길" />
+    <meta
+      property="og:description"
+      content="창원가발,정품가발,한일모,가발,마산가발,진해가발,진주가발,맞춤가발,가발대여,가발수선,부분가발,항암가발,한일모,이상무명품가발한일모,이상무명품가발"
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/icon.png" />
+    <meta property="og:url" content="https://hanilmo.netlify.app/" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
 
-  <meta name="description"
-    content="창원가발,정품가발,한일모,마산가발,진해가발,진주가발,거제가발,양산가발,통영가발,맞춤가발,가발대여,가발수선,부분가발,항암가발,한일모,이상무한일모,이상무명품가발한일모,이상무명품가발">
-  <meta name="subject" content="명품가발 한일모">
-  <meta name="author" content="명품가발 한일모">
-  <meta name="keywords"
-    content="창원가발,정품가발,한일모,마산가발,진해가발,진주가발,거제가발,양산가발,통영가발,맞춤가발,가발대여,가발수선,부분가발,항암가발,한일모,이상무한일모,이상무명품가발한일모,이상무명품가발">
-  <link rel="icon" sizes="64x64" href="%PUBLIC_URL%/icon.png">
-  <meta name="robots" content="index,follow">
-  <!-- Open Graph data -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="오시는길">
-  <meta property="og:description"
-    content="창원가발,정품가발,한일모,가발,마산가발,진해가발,진주가발,맞춤가발,가발대여,가발수선,부분가발,항암가발,한일모,이상무명품가발한일모,이상무명품가발">
-  <meta property="og:image" content="%PUBLIC_URL%/icon.png">
-  <meta property="og:url" content="https://hanilmo.netlify.app/">
-  <meta property="og:image:width" content="512">
-  <meta property="og:image:height" content="512">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="오시는길" />
+    <meta
+      name="twitter:description"
+      content="창원가발,정품가발,한일모,마산가발,진해가발,진주가발,거제가발,양산가발,통영가발,맞춤가발,가발대여,가발수선,부분가발,항암가발,한일모,이상무한일모,이상무명품가발한일모,이상무명품가발"
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/icon.png" />
+    <meta name="twitter:domain" content="https://hanilmo.netlify.app/" />
 
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="오시는길">
-  <meta name="twitter:description"
-    content="창원가발,정품가발,한일모,마산가발,진해가발,진주가발,거제가발,양산가발,통영가발,맞춤가발,가발대여,가발수선,부분가발,항암가발,한일모,이상무한일모,이상무명품가발한일모,이상무명품가발">
-  <meta name="twitter:image" content="%PUBLIC_URL%/icon.png">
-  <meta name="twitter:domain" content="https://hanilmo.netlify.app/">
-
-  <link rel="canonical" href="https://hanilmo.netlify.app/">
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon.png" />
-  <!--
+    <link rel="canonical" href="https://hanilmo.netlify.app/" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon.png" />
+    <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -54,13 +67,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>한일모 :: 이상무 명품가발</title>
-</head>
+    <title>한일모 :: 이상무 명품가발</title>
+  </head>
 
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <!--
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -70,6 +83,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-</body>
-
+  </body>
 </html>

@@ -1,6 +1,6 @@
-import React from "react";
-import { Router } from "./router/Router";
-import Footer from "./component/Footer";
+import React from 'react';
+import Router from './router/Router';
+import Footer from './component/Footer';
 
 function App() {
   return (
